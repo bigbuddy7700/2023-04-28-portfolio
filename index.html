@@ -13,9 +13,9 @@
         <div class="header">
             <div class="logo"><a href="#">홍길동</a></div>
             <ul class="gnb">
-                <li><a href="#">소개</a></li>
-                <li><a href="#">작업</a></li>
-                <li><a href="#">연락하기</a></li>
+                <li><a href="#"><span>소개</span></a></li>
+                <li><a href="#"><span>작업</span></a></li>
+                <li><a href="#"><span>연락하기</span></a></li>
             </ul>
             <div class="bars"><i class="xi-bars"></i></div>
         </div>
@@ -110,6 +110,19 @@
                 </ul>
         </div>
          </div>
-    </div>    
+    </div>
+    
+    <script>
+         const btn = document.querySelector('.bars i')
+         const gnb = document.querySelector('.gnb')
+
+         console.log(btn)
+         console.log(gnb)
+
+         btn,addEventListener('click', function(){
+             gnb.classList.toggle('active')
+             btn.classList.toggle('xi-close')
+         })
+    </script>
 </body>
 </html>
